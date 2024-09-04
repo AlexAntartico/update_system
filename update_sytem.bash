@@ -26,6 +26,7 @@ if [ $? -ne 0  ]; then
 fi
 
 # Clean obsolete and temp files
+echo -e "\nRemoving obsolete and temp files\n"
 sudo apt autoremove -y | tee -a system_update.log
 
 # error handling, notifies user and exits script
